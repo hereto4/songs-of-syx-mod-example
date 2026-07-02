@@ -15,7 +15,8 @@ It is shipped with its own Java Runtime Environment (JRE) found in the game inst
 
 You can either follow the [Setup IntelliJ IDEA](../../doc/howto/intellij_setup.md) guide or look into the game installation directory under `info/SongsOfSyx-sources.jar`.
 This is a `zip` archive, which you can extract and browse.  
-**Mac** users must manually extract the game code from the main `./SongsOfSyx.jar` with the command `jar xf <file_path>.jar`. 
+**Mac** users does not have the `SongsOfSyx-sources.jar` included in the program and
+must manually extract the game code from the main `./SongsOfSyx.jar` with the command `jar xf <file_path>.jar`. 
 To make it work, zip the extracted folder, rename it to `SongsOfSyx-sources`, change the file ending to `.jar` and place it in `info/` 
 
 ## Important packages
