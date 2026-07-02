@@ -43,7 +43,7 @@
                 <game.mod.directory>${user.home}/Library/Application Support/songsofsyx/mods</game.mod.directory>
                 <game.workshop.directory>${user.home}/Library/Application Support/Steam/steamapps/workshop/content/1162750</game.workshop.directory>
                 <game.install.directory>${user.home}/Library/Application Support/Steam/steamapps/common/Songs of Syx/SongsOfSyxMac.app/Contents/Resources</game.install.directory>
-                <game.mod.uploader.directory>${user.home}/Library/Application Support/songsofsyx/mods</game.mod.uploader.directory>
+                <game.mod.uploader.directory>${user.home}/Library/Application Support/songsofsyx/mod-uploader</game.mod.uploader.directory>
             </properties>
             <activation>
                 <os>
