@@ -138,15 +138,6 @@
         <game.version.major>71</game.version.major>
         <game.version.minor>44</game.version.minor>
 
-        <!-- Mod SDK (this only applies when "mod-sdk" profile is enabled) -->
-        <mod.sdk.version>0.1.1</mod.sdk.version>
-        <mod.sdk.name>Mod SDK V${mod.sdk.version}</mod.sdk.name>
-        <mod.sdk.workshop.id>3331182511</mod.sdk.workshop.id>
-        <mod.sdk.directory>${game.mod.directory}/${mod.sdk.name}</mod.sdk.directory>
-        <mod.sdk.jar.directory>${mod.sdk.directory}/${game.version.directory}/script</mod.sdk.jar.directory>
-        <mod.sdk.jar.src.directory>${mod.sdk.jar.directory}/_src</mod.sdk.jar.src.directory>
-
-
         <!-- Build settings -->
         <game.version.directory>V${game.version.major}</game.version.directory>
         <game.jar.name>SongsOfSyx.jar</game.jar.name>
@@ -168,6 +159,8 @@
         <mockito-core.version>4.11.0</mockito-core.version>
         <assertj-core.version>3.24.2</assertj-core.version>
         <lombok.version>1.18.42</lombok.version>
+        <!-- Mod SDK (this only applies when "mod-sdk" profile is enabled) -->
+        <mod.sdk.version>0.1.3</mod.sdk.version>
 
         <!-- Build plugin versions -->
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>

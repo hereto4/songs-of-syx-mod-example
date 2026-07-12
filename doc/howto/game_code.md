@@ -143,7 +143,7 @@ See: [Access game code](access_game_code.md)
 The game has a lot of its data and other things in `static` fields.
 When the JVM starts, one of the first things it does, is to fill any fields with the `static` keyword.
 But a lot of the game resources aren't ready or initialized when the Java JVM executes your `static` stuff.
-So it could come to something like this:
+In the best case you will get a `NullPointerException` when trying to access something and at worst you will get something like this:
 
 ```java
 import init.sprite.UI.UI;
