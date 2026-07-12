@@ -119,9 +119,13 @@ Also, the name of your built `*.jar` file may be different.
 
 ## Mod SDK (Optional)
 
-:information_source: The Mod SDK is still somewhat experimental. 
-I'm using it for my [More Options](https://github.com/4rg0n/songs-of-syx-mod-more-options) mod. 
-That's also the place where currently the [code](https://github.com/4rg0n/songs-of-syx-mod-more-options/tree/main/mod-sdk) and [documentation](https://github.com/4rg0n/songs-of-syx-mod-more-options/tree/main/mod-sdk/src/main/java/com/github/argon/sos/mod/sdk#mod-sdk) of it lives.
+:information_source: The Mod SDK is still somewhat experimental.
+I'm using it for my [More Options](https://github.com/4rg0n/songs-of-syx-mod-more-options) mod.
+
+To enable it, you have to enable the `mod-sdk` maven profile.
+Here you can find the [code](https://github.com/4rg0n/songs-of-syx-mod-more-options/tree/main/mod-sdk) and [documentation](https://github.com/4rg0n/songs-of-syx-mod-more-options/tree/main/mod-sdk/src/main/java/com/github/argon/sos/mod/sdk#mod-sdk) of it.
+
+:information_source: Be sure to add the [Mod SDK](https://steamcommunity.com/sharedfiles/filedetails/?id=3331182511) as dependency to your mod in the Steam Workshop.
 
 See [Mod SDK Setup](doc/howto/mod_sdk_setup.md)
 

@@ -52,65 +52,12 @@
             </activation>
         </profile>
         <profile>
-            <id>mod-sdk-steam</id>
-            <properties>
-                <mod.sdk.directory>${game.workshop.directory}/${mod.sdk.workshop.id}</mod.sdk.directory>
-            </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
             <id>mod-sdk</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-install-plugin</artifactId>
-                        <executions>
-                            <!-- Install mod-sdk jar as dependency code -->
-                            <execution>
-                                <id>install-mod-sdk-jar</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>install-file</goal>
-                                </goals>
-                                <configuration>
-                                    <groupId>com.github.argon.sos</groupId>
-                                    <artifactId>sos-mod-sdk</artifactId>
-                                    <version>sdk-${mod.sdk.version}</version>
-                                    <packaging>jar</packaging>
-                                    <file>${mod.sdk.jar.directory}/${mod.sdk.name}.jar</file>
-                                    <generatePom>true</generatePom>
-                                </configuration>
-                            </execution>
-
-                            <!-- Install mod-sdk source jar as dependency code -->
-                            <execution>
-                                <id>install-mod-sdk-sources-jar</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>install-file</goal>
-                                </goals>
-                                <configuration>
-                                    <groupId>com.github.argon.sos</groupId>
-                                    <artifactId>sos-mod-sdk</artifactId>
-                                    <version>sdk-${mod.sdk.version}</version>
-                                    <packaging>jar</packaging>
-                                    <classifier>sources</classifier>
-                                    <file>${mod.sdk.jar.src.directory}/${mod.sdk.name}-sources.jar</file>
-                                    <generatePom>false</generatePom>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
             <dependencies>
                 <dependency>
-                    <groupId>com.github.argon.sos</groupId>
+                    <groupId>io.github.4rg0n</groupId>
                     <artifactId>sos-mod-sdk</artifactId>
-                    <version>sdk-${mod.sdk.version}</version>
+                    <version>${mod.sdk.version}</version>
                 </dependency>
             </dependencies>
         </profile>
@@ -192,7 +139,7 @@
         <game.version.minor>44</game.version.minor>
 
         <!-- Mod SDK (this only applies when "mod-sdk" profile is enabled) -->
-        <mod.sdk.version>0</mod.sdk.version>
+        <mod.sdk.version>0.1.1</mod.sdk.version>
         <mod.sdk.name>Mod SDK V${mod.sdk.version}</mod.sdk.name>
         <mod.sdk.workshop.id>3331182511</mod.sdk.workshop.id>
         <mod.sdk.directory>${game.mod.directory}/${mod.sdk.name}</mod.sdk.directory>
