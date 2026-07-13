@@ -160,7 +160,7 @@
         <assertj-core.version>3.24.2</assertj-core.version>
         <lombok.version>1.18.42</lombok.version>
         <!-- Mod SDK (this only applies when "mod-sdk" profile is enabled) -->
-        <mod.sdk.version>0.1.4</mod.sdk.version>
+        <mod.sdk.version>0.1.5</mod.sdk.version>
 
         <!-- Build plugin versions -->
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
