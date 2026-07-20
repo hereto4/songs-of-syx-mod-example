@@ -4,6 +4,7 @@
 
 - Note 1: 'Default' values are based on v68/v70 and may have changed in v71; some have been re-verified against v71.19 source.
 - Note 2: All keys use their British spelling ('Honour', 'Behaviour', etc., except for 'Jewelry' which uses its American spelling), and some keys are intentionally misspelled (this will be noted next to the key).
+-
 
 <!-- TOC -->
 * [All available vanilla game boosters ```v71```](#all-available-vanilla-game-boosters-v71)
