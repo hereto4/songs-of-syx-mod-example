@@ -182,7 +182,10 @@ references to parrying are speculative; parry may not be implemented in game (co
 | `CIVIC_TRUST`             | Trust                  | 0       | a faction's reliability in keeping treaties and not starting war against you             |
 
 ## CONSUMPTION
-v71 no longer exposes per-resource `CON_<resource>` boostables. Consumption is now per-room and registered under the ROOM (`ROOM_`) category. Each consuming room gets `ROOM_CONSUMPTION_<roomkey>` (single-recipe consumption rooms), and industry rooms with multiple input+output recipes get `ROOM_CONSUMPTION_<roomkey>_<i>` (one per recipe, `i` starting at 0). Higher value = higher consumption rate.
+v71 no longer exposes per-resource `CON_<resource>` boostables. Consumption is now per-room and registered under the ROOM (`ROOM_`) category. Each consuming room gets `ROOM_CONSUMPTION_<roomkey>` (single-recipe consumption rooms), and industry rooms with multiple input+output recipes get `ROOM_CONSUMPTION_<roomkey>_<i>` (one per recipe, `i` starting at 0).
+
+**NOTE! This is a consumption-*efficiency* divisor, NOT a multiplier** (hbase value `1`).
+The engine computes input use as `production_rate / ROOM_CONSUMPTION_*`, so **higher value = LOWER input consumption**. To halve a recipe's input use set `>MUL: 2`; to *double* it, set `>MUL: 0.5`. The value is resolved **per worker against that worker's race**, so setting it in a race's `BOOST{}` block affects only that race's workers. It does **not** compound across workers — each worker's share is divided once, so an all-one-race crew scales the room's total input use by that single factor regardless of headcount.
 
 | Key                                     | Name                             | Default | Description                                                   |
 |-----------------------------------------|----------------------------------|---------|---------------------------------------------------------------|
